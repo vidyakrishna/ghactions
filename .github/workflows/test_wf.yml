@@ -11,9 +11,9 @@ jobs:
         with:
           node-version: 18
       - name: Install depednecies
-        run: cd ${{ github.workspace }}./02StartingProject
+        run: cd ${{ github.workspace }}/02StartingProject
           |  npm ci
       - name: run tests
-        run: cd ${{ github.workspace }}./02StartingProject
+        run: cd ${{ github.workspace }}/02StartingProject
           | npm test
           
