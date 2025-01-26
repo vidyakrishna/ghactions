@@ -11,12 +11,11 @@ jobs:
         with:
           node-version: 18
       - name: Install depednecies
-        run: ls -lart 
-          | cd ${{ github.workspace }}/02StartingProject/
+        run: cd 02StartingProject
           | ls -lart
-          # |  npm ci
+          |  npm ci
       - name: run tests
-        run: cd ${{ github.workspace }}/02StartingProject/
-          | ls
-          # | npm test
+        run: cd 02StartingProject
+          | ls -lart
+          | npm test
           
